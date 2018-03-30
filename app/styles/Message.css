@@ -1,0 +1,35 @@
+.message {
+  padding: 10px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.58);
+  -webkit-box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);
+  box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);
+}
+
+.message-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.message-body {
+  padding-left: 10px;
+}
+
+.message-footer {
+  text-align: right;
+  padding-top: 10px;
+  font-size: 0.7rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 5px;
+  position: absolute;
+  top: -10px;
+}

@@ -1,0 +1,11 @@
+.footer {
+  height: 20%;
+}
+
+.mint-img {
+  height: 100%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  background: rgba(52, 255, 191, 0.12);
+}
