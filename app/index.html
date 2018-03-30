@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MintChat</title>
+    <meta name="description" content="MintChat">
+    <link id="favicon" rel="icon" href="http://www.pngmart.com/files/4/Mint-PNG-HD.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+      <style>
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+
+          body {
+            background: rgba(195, 216, 201, 0.88);
+          }
+        
+        
+          /*
+          * Preloader
+          */
+            .spinner {
+              width: 10%;
+              height: 20vh;
+
+              position: relative;
+              margin: 100px auto;
+            }
+
+            .double-bounce1, .double-bounce2 {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              background-color: #358e9c;
+              opacity: 0.6;
+              position: absolute;
+              top: 0;
+              left: 0;
+
+              -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+              animation: sk-bounce 2.0s infinite ease-in-out;
+              
+              }
+
+              .double-bounce2 {
+                -webkit-animation-delay: -1.0s;
+                animation-delay: -1.0s;
+              }
+
+              @-webkit-keyframes sk-bounce {
+                0%, 100% { -webkit-transform: scale(0.0) }
+                50% { -webkit-transform: scale(1.0) }
+              }
+
+              @keyframes sk-bounce {
+                0%, 100% { 
+                  transform: scale(0.0);
+                  -webkit-transform: scale(0.0);
+                } 50% { 
+                  transform: scale(1.0);
+                  -webkit-transform: scale(1.0);
+                }
+              }
+        
+        
+        .telegram-wrapper {
+          background: rgba(168, 195, 202, 0.56);
+          padding: 10px;
+          margin: auto;
+          width: 245px;
+          border-radius: 10px;
+          margin-top: 30px;
+        }
+      </style>
+      
+    
+       
+      <!-- telegram widget -->
+      <div class="telegram-wrapper">
+        <script async src="https://telegram.org/js/telegram-widget.js?4" data-telegram-login="UpworkQuestBot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+      </div>
+      <script type="text/javascript">
+        function onTelegramAuth(user) {
+          localStorage.setItem("username", user.first_name + " " + user.last_name);
+          localStorage.setItem("avatar_url", user.photo_url);
+        }
+      </script>
+    
+    
+    
+      <div id="main">
+        <!-- the chat with header will be in here -->
+        
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+      
+    
+      <!-- bundle all the scripts-->
+      <script type="text/javascript" src="/bundle.js"></script>
+  </body>
+</html>

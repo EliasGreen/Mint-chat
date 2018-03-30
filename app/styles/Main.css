@@ -1,0 +1,9 @@
+.main {
+  width: 800px;
+  background: rgba(135, 189, 187, 0.39);
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+  height: 600px;
+  border: 7px solid rgba(136, 128, 128, 0.42);
+}
