@@ -36374,7 +36374,7 @@ class Chat extends React.Component {
     let messages = this.state.messages.map((el) => {
           return React.createElement(Message, {avatar_url: el.avatar_url, username: el.username, text: el.text, date: el.date, key: el.date + el.text + Math.random()}) 
         });
-    // seting scroll position of DIV "messages-container"
+    // set scroll position of DIV "messages-container"
     window.setTimeout(function() {
         let elem = document.getElementsByClassName('messages-container');
         elem[0].scrollTop = elem[0].scrollHeight;
@@ -36512,7 +36512,7 @@ exports = module.exports = __webpack_require__(47)(false);
 
 
 // module
-exports.push([module.i, ".message {\n  padding: 10px;\n  margin: 10px;\n  background: rgba(255, 255, 255, 0.58);\n  -webkit-box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);\n  -moz-box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);\n  box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);\n}\n\n.message-label {\n  font-size: 1.5rem;\n  font-weight: bold;\n  position: relative;\n}\n\n.message-body {\n  padding-left: 10px;\n}\n\n.message-footer {\n  text-align: right;\n  padding-top: 10px;\n  font-size: 0.7rem;\n  color: rgba(0, 0, 0, 0.55);\n}\n\n.avatar {\n  height: 40px;\n  width: 40px;\n  border-radius: 50%;\n  margin: 5px;\n  padding: 5px;\n  position: absolute;\n  top: -10px;\n}", ""]);
+exports.push([module.i, ".message {\n  padding: 10px;\n  margin: 10px;\n  background: rgba(255, 255, 255, 0.58);\n  -webkit-box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);\n  -moz-box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);\n  box-shadow: 10px 10px 43px -15px rgba(0,0,0,1);\n}\n\n.message-label {\n  font-size: 1.5rem;\n  font-weight: bold;\n  position: relative;\n}\n\n.message-body {\n  padding-left: 10px;\n  word-wrap: break-word;\n}\n\n.message-footer {\n  text-align: right;\n  padding-top: 10px;\n  font-size: 0.7rem;\n  color: rgba(0, 0, 0, 0.55);\n}\n\n.avatar {\n  height: 40px;\n  width: 40px;\n  border-radius: 50%;\n  margin: 5px;\n  padding: 5px;\n  position: absolute;\n  top: -10px;\n}", ""]);
 
 // exports
 

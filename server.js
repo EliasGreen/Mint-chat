@@ -82,7 +82,10 @@ app.post("/add-message", (request, response) => {
 
 // get_all_messages handler
 app.post("/get-messages", (request, response) => {
-    messageModel.find((err, messages) => {
-                  if (!err) response.status(200).json(messages);
-                }).select({ "username": 1, "_id": 0, "avatar_url": 1, "date": 1, "text": 1});
+    messageModel
+    .find()
+    .select({ "username": 1, "_id": 0, "avatar_url": 1, "date": 1, "text": 1})
+    .exec((err, messages) => {
+            if (!err) response.status(200).json(messages);
+          });
 });

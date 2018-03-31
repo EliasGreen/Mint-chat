@@ -88,7 +88,7 @@ class Chat extends React.Component {
     let messages = this.state.messages.map((el) => {
           return <Message avatar_url={el.avatar_url} username={el.username} text={el.text} date={el.date} key={el.date + el.text + Math.random()}/> 
         });
-    // seting scroll position of DIV "messages-container"
+    // set scroll position of DIV "messages-container"
     window.setTimeout(function() {
         let elem = document.getElementsByClassName('messages-container');
         elem[0].scrollTop = elem[0].scrollHeight;

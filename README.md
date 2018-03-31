@@ -1,6 +1,12 @@
 ==========================================
 ---------------------------------------------------
-Glitch React Starter Pack
+MintChat
 ---------------------------------------------------
 ==========================================
 ---------------------------------------------------
+
+
+Key features:
+- auto-uploading of new messages
+- authorization via Telegram
+- sending messages without authorization
